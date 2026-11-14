@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; script-src 'none'; form-action 'self';">
+  <title>Acerca de | Portafolio Profesional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__brand">DevPortafolio</a>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+          <li class="nav__item"><a href="acerca.html" class="nav__link nav__link--active">Acerca de</a></li>
+          <li class="nav__item"><a href="proyectos.html" class="nav__link">Proyectos</a></li>
+          <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="profile">
+      <div class="profile__header">
+        <img src="assets/perfil.jpg" alt="Fotografía de perfil del estudiante" class="profile__photo" width="180" height="180">
+        <div class="profile__intro">
+          <h1 class="profile__title">Acerca de Mí</h1>
+          <p class="profile__bio">Estudiante del curso de Desarrollo en JavaScript apasionado por crear experiencias digitales claras, rápidas y accesibles para todo tipo de dispositivos.</p>
+        </div>
+      </div>
+
+      <div class="grid grid--two-cols">
+        <section class="info-block">
+          <h2 class="info-block__title">Habilidades Técnicas</h2>
+          <ul class="info-block__list">
+            <li class="info-block__item">Estructuración semántica con HTML5</li>
+            <li class="info-block__item">Arquitectura CSS escalable con metodología BEM</li>
+            <li class="info-block__item">Maquetación responsiva con Flexbox y CSS Grid</li>
+            <li class="info-block__item">Validación de formularios y seguridad básica CSP</li>
+          </ul>
+        </section>
+
+        <section class="info-block">
+          <h2 class="info-block__title">Herramientas Manejadas</h2>
+          <ul class="info-block__list">
+            <li class="info-block__item">Visual Studio Code</li>
+            <li class="info-block__item">Git y GitHub (flujo de ramas y GitHub Pages)</li>
+            <li class="info-block__item">Herramientas de desarrollo del navegador (DevTools)</li>
+            <li class="info-block__item">Validadores de accesibilidad y estándares W3C</li>
+          </ul>
+        </section>
+
+        <section class="info-block">
+          <h2 class="info-block__title">Áreas de Interés</h2>
+          <ol class="info-block__list info-block__list--ordered">
+            <li class="info-block__item">Desarrollo Front-End con JavaScript moderno</li>
+            <li class="info-block__item">Experiencia de Usuario (UX) y Accesibilidad Web</li>
+            <li class="info-block__item">Ciberseguridad aplicada a aplicaciones web (OWASP)</li>
+          </ol>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">&copy; 2026 Portafolio Profesional - Módulo 1: Fundamentos de Desarrollo Web.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; script-src 'none'; form-action 'self';">
+  <title>Contacto | Portafolio Profesional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__brand">DevPortafolio</a>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+          <li class="nav__item"><a href="acerca.html" class="nav__link">Acerca de</a></li>
+          <li class="nav__item"><a href="proyectos.html" class="nav__link">Proyectos</a></li>
+          <li class="nav__item"><a href="contacto.html" class="nav__link nav__link--active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="contact">
+      <h1 class="contact__title">Formulario de Contacto</h1>
+      <p class="contact__subtitle">Completa los campos requeridos. Todas las entradas cuentan con validación HTML5.</p>
+
+      <form action="#" method="get" class="form">
+        <div class="form__group">
+          <label for="nombre" class="form__label">Nombre completo *</label>
+          <input type="text" id="nombre" name="nombre" class="form__input" required minlength="3" maxlength="60" placeholder="Ej. Ana María López">
+        </div>
+
+        <div class="form__group">
+          <label for="correo" class="form__label">Correo electrónico *</label>
+          <input type="email" id="correo" name="correo" class="form__input" required maxlength="100" placeholder="usuario@dominio.com">
+        </div>
+
+        <div class="form__group">
+          <label for="clave" class="form__label">Contraseña temporal de seguimiento *</label>
+          <input type="password" id="clave" name="clave" class="form__input" required minlength="8" maxlength="32" placeholder="Mínimo 8 caracteres">
+        </div>
+
+        <div class="form__group">
+          <label for="servicio" class="form__label">Tipo de consulta *</label>
+          <select id="servicio" name="servicio" class="form__select" required>
+            <option value="">Selecciona una opción...</option>
+            <option value="landing">Desarrollo de Landing Page</option>
+            <option value="auditoria">Auditoría de Accesibilidad y Seguridad</option>
+            <option value="colaboracion">Propuesta Laboral o Colaboración</option>
+          </select>
+        </div>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Prioridad del proyecto *</legend>
+          <div class="form__option">
+            <input type="radio" id="prioridad-normal" name="prioridad" value="normal" class="form__radio" required checked>
+            <label for="prioridad-normal" class="form__option-label">Normal (2 a 4 semanas)</label>
+          </div>
+          <div class="form__option">
+            <input type="radio" id="prioridad-alta" name="prioridad" value="alta" class="form__radio">
+            <label for="prioridad-alta" class="form__option-label">Urgente (Menos de 2 semanas)</label>
+          </div>
+        </fieldset>
+
+        <div class="form__group">
+          <label for="archivo" class="form__label">Adjuntar documento de especificaciones (PDF o imagen)</label>
+          <input type="file" id="archivo" name="archivo" class="form__file" accept=".pdf,.png,.jpg,.jpeg">
+        </div>
+
+        <div class="form__group">
+          <label for="mensaje" class="form__label">Mensaje o detalles adicionales *</label>
+          <textarea id="mensaje" name="mensaje" class="form__textarea" rows="5" required minlength="10" maxlength="500" placeholder="Describe brevemente tu proyecto o consulta..."></textarea>
+        </div>
+
+        <div class="form__group form__group--checkbox">
+          <input type="checkbox" id="terminos" name="terminos" class="form__checkbox" required>
+          <label for="terminos" class="form__option-label">Acepto los términos de privacidad y el tratamiento seguro de mis datos *</label>
+        </div>
+
+        <button type="submit" class="button button--primary">Enviar consulta</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">&copy; 2026 Portafolio Profesional - Módulo 1: Fundamentos de Desarrollo Web.</p>
+  </footer>
+</body>
+</html>

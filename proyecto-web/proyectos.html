@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; script-src 'none'; form-action 'self';">
+  <title>Proyectos | Portafolio Profesional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__brand">DevPortafolio</a>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+          <li class="nav__item"><a href="acerca.html" class="nav__link">Acerca de</a></li>
+          <li class="nav__item"><a href="proyectos.html" class="nav__link nav__link--active">Proyectos</a></li>
+          <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="projects">
+      <h1 class="projects__title">Portafolio de Proyectos</h1>
+      <p class="projects__subtitle">Listado estructurado de trabajos desarrollados aplicando estándares web.</p>
+
+      <div class="table-wrapper">
+        <table class="projects-table">
+          <thead class="projects-table__head">
+            <tr class="projects-table__row">
+              <th scope="col" class="projects-table__header">Nombre del Proyecto</th>
+              <th scope="col" class="projects-table__header">Tecnologías</th>
+              <th scope="col" class="projects-table__header">Fecha</th>
+              <th scope="col" class="projects-table__header">Estado</th>
+            </tr>
+          </thead>
+          <tbody class="projects-table__body">
+            <tr class="projects-table__row">
+              <td class="projects-table__cell" data-label="Proyecto">Landing Page Corporativa</td>
+              <td class="projects-table__cell" data-label="Tecnologías">HTML5, CSS3, BEM</td>
+              <td class="projects-table__cell" data-label="Fecha">Octubre 2026</td>
+              <td class="projects-table__cell" data-label="Estado"><span class="badge badge--done">Completado</span></td>
+            </tr>
+            <tr class="projects-table__row">
+              <td class="projects-table__cell" data-label="Proyecto">Sistema de Reservas Médicas</td>
+              <td class="projects-table__cell" data-label="Tecnologías">HTML5, CSS Grid, Formularios</td>
+              <td class="projects-table__cell" data-label="Fecha">Septiembre 2026</td>
+              <td class="projects-table__cell" data-label="Estado"><span class="badge badge--done">Completado</span></td>
+            </tr>
+            <tr class="projects-table__row">
+              <td class="projects-table__cell" data-label="Proyecto">Catálogo Digital Responsivo</td>
+              <td class="projects-table__cell" data-label="Tecnologías">HTML5, Flexbox, Media Queries</td>
+              <td class="projects-table__cell" data-label="Fecha">Agosto 2026</td>
+              <td class="projects-table__cell" data-label="Estado"><span class="badge badge--progress">En revisión</span></td>
+            </tr>
+            <tr class="projects-table__row">
+              <td class="projects-table__cell" data-label="Proyecto">Panel de Seguridad OWASP</td>
+              <td class="projects-table__cell" data-label="Tecnologías">HTML5, CSP, GitHub Pages</td>
+              <td class="projects-table__cell" data-label="Fecha">Noviembre 2026</td>
+              <td class="projects-table__cell" data-label="Estado"><span class="badge badge--active">En desarrollo</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">&copy; 2026 Portafolio Profesional - Módulo 1: Fundamentos de Desarrollo Web.</p>
+  </footer>
+</body>
+</html>
