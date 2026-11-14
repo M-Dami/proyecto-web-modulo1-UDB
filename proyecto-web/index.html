@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; script-src 'none'; form-action 'self';">
+  <title>Inicio | Portafolio Profesional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__brand">DevPortafolio</a>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Inicio</a></li>
+          <li class="nav__item"><a href="acerca.html" class="nav__link">Acerca de</a></li>
+          <li class="nav__item"><a href="proyectos.html" class="nav__link">Proyectos</a></li>
+          <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main main--with-sidebar">
+    <div class="main__content">
+      <section class="hero">
+        <h1 class="hero__title">Desarrollo Web Moderno, Semántico y Seguro</h1>
+        <p class="hero__text">Bienvenido a mi portafolio profesional. Aquí encontrarás soluciones web construidas con estándares actuales de accesibilidad, diseño responsivo y buenas prácticas de seguridad.</p>
+        <a href="proyectos.html" class="button button--primary">Ver mis proyectos</a>
+      </section>
+
+      <section class="services">
+        <h2 class="section__title">Especialidades Principales</h2>
+        <div class="grid grid--cards">
+          <article class="card">
+            <h3 class="card__title">Maquetación Semántica</h3>
+            <p class="card__text">Estructuras HTML5 limpias y optimizadas para motores de búsqueda y lectores de pantalla.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Diseño Mobile First</h3>
+            <p class="card__text">Interfaces adaptables a teléfonos, tabletas y pantallas de escritorio usando Flexbox y CSS Grid.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Seguridad Front-End</h3>
+            <p class="card__text">Implementación de políticas CSP, validación estricta de formularios y separación de estilos.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <aside class="sidebar">
+      <h2 class="sidebar__title">Resumen Rápido</h2>
+      <p class="sidebar__text">Disponible para proyectos freelance y colaboraciones en desarrollo front-end.</p>
+      <ul class="sidebar__list">
+        <li class="sidebar__item">HTML5 &amp; CSS3 (BEM)</li>
+        <li class="sidebar__item">Diseño Responsivo</li>
+        <li class="sidebar__item">Control de Versiones con Git</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">&copy; 2026 Portafolio Profesional - Módulo 1: Fundamentos de Desarrollo Web.</p>
+  </footer>
+</body>
+</html>
